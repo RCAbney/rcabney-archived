@@ -24,10 +24,33 @@ module.exports = {
         icon: `src/images/rcabney-logo.jpg`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-mdx`,
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout.js"),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+        plugins: [{ resolve: "gatsby-remark-images" }],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `posts`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
