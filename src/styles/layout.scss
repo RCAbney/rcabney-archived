@@ -20,15 +20,25 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
 
+.logo {
+  display: block;
+  width: 200px;
+}
+
 .logo > a {
   color: #fff;
   text-decoration: none;
-  padding: 1rem 1rem 1rem 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .nav-links {
@@ -104,6 +114,11 @@ nav {
     color: #fff;
     background-color: #6c8b6b;
   }
+}
+
+.post {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .intro,
