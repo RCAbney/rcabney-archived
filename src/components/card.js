@@ -4,7 +4,6 @@ import Image from "gatsby-image"
 import WorkTags from "./worktags"
 
 const Card = ({ image, title, excerpt, tags, slug }) => {
-  console.log(tags)
   return (
     <div className="card">
       <Link to={slug}>
