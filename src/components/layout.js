@@ -29,8 +29,8 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <footer>
         <div className="footer-content">
-          © {new Date().getFullYear()},{` `}
-          <Link to="/">RCAbney</Link>
+
+          <Link to="/" className="footer-link">© {new Date().getFullYear()}{` `}RCAbney</Link>
         </div>
       </footer>
     </>
