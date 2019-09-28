@@ -21,7 +21,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
     <SEO title={post.frontmatter.title} />
     <article className="post">
       <h1>{post.frontmatter.title}</h1>
-      <MDXRenderer>{post.body}</MDXRenderer>
+      <MDXRenderer className="post">{post.body}</MDXRenderer>
     </article>
   </Layout>
 )

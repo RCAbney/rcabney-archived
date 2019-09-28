@@ -8,7 +8,7 @@
 
 body {
   background-color: #eee;
-  line-height: 1.2;
+  line-height: 1.5;
   font-family: "Raleway", sans-serif;
 }
 
@@ -138,4 +138,12 @@ footer {
 .footer-link {
   color: #fff;
   text-decoration: none;
+}
+
+article.post {
+  max-width: 60ch;
+  h1 {
+    font-family: "Merriweather", serif;
+    color: #6c8b6b;
+  }
 }
