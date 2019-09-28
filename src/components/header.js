@@ -8,8 +8,7 @@ const Header = ({ siteTitle }) => (
     <nav>
       <div className="logo">
         <Link to="/">
-          <Image alt="tacobell" />
-          {/* <img src="https://placehold.it/651x120" alt="taco" /> */}
+          <Image />
         </Link>
       </div>
       <div className="nav-links">
