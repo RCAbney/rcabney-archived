@@ -12,7 +12,7 @@ const usePosts = () => {
             tags
             image {
               sharp: childImageSharp {
-                fluid(maxWidth: 800, maxHeight: 800) {
+                fluid(maxWidth: 800, maxHeight: 800, traceSVG: {color: "#6c8b6b"}) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
