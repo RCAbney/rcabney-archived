@@ -10,11 +10,11 @@ const Card = ({ image, title, excerpt, tags, slug }) => {
         <Image fluid={image.sharp.fluid} className="folio-image" alt={title} />
       </Link>
       <div className="folio-details">
-        <h1>
+        <h2>
           <Link className="folio-link" to={slug}>
             {title}
           </Link>
-        </h1>
+        </h2>
         <p>{excerpt}</p>
       </div>
       <WorkTags tags={tags} />

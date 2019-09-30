@@ -6,9 +6,15 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   background-color: #eee;
+  color: rgba(0, 0, 0, 0.8);
   line-height: 1.5;
+  font-size: 1.125rem;
   font-family: "Raleway", sans-serif;
 }
 
@@ -72,7 +78,7 @@ nav {
   box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
-  h1 {
+  h2 {
     margin: 0;
     font-family: "Merriweather", serif;
     font-weight: 700;
@@ -122,8 +128,8 @@ nav {
   padding: 1rem;
 }
 
-.intro,
-.footer-content {
+.footer-content,
+.homepage-intro {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
@@ -140,7 +146,9 @@ footer {
   text-decoration: none;
 }
 
-article.post {
+article.post,
+section.intro {
+  margin: 0 auto;
   max-width: 60ch;
   h1 {
     font-family: "Merriweather", serif;
