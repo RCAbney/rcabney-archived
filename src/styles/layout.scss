@@ -6,21 +6,40 @@
   box-sizing: border-box;
 }
 
+:root {
+  --spacing: 1.5rem;
+  --sans-serif: "Raleway", sans-serif;
+  --serif: "Merriweather", serif;
+  --brand-primary: #6c8b6b;
+  --primary-text: rgba(0, 0, 0, 0.8);
+}
+
 html {
   font-size: 100%;
 }
 
 body {
   background-color: #eee;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--primary-text);
   line-height: 1.5;
   font-size: 1.125rem;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--sans-serif);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--brand-primary);
 }
 
 header {
   background-color: #000;
-  border-bottom: 4px solid #6c8b6b;
+  border-bottom: 4px solid var(--brand-primary);
 }
 
 nav {
@@ -55,7 +74,7 @@ nav {
   a {
     color: #fff;
     text-decoration: none;
-    padding: 0 1.5rem;
+    padding: 0 var(--spacing);
 
     &:last-child {
       padding-right: 0;
@@ -69,7 +88,7 @@ nav {
   margin: 0 auto 2rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: var(--spacing);
 }
 
 .card {
@@ -80,14 +99,16 @@ nav {
   flex-direction: column;
   h2 {
     margin: 0;
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    color: #6c8b6b;
+    color: var(--brand-primary);
     .folio-link {
       color: inherit;
       text-decoration: none;
     }
   }
+}
+
+.card > * + * {
+  margin-bottom: var(--spacing);
 }
 
 .folio-image {
@@ -118,12 +139,8 @@ nav {
     padding: 0.5rem;
     border-radius: 6px;
     color: #fff;
-    background-color: #485B48;
+    background-color: #485b48;
   }
-}
-
-.post {
-  padding: 1rem;
 }
 
 .footer-content,
@@ -145,11 +162,16 @@ footer {
 }
 
 article.post,
-section.intro {
-  margin: 0 auto;
-  max-width: 60ch;
-  h1 {
-    font-family: "Merriweather", serif;
-    color: #6c8b6b;
-  }
+section.intro,
+section.resume {
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing);
+  max-width: 75ch;
+}
+
+article.post > * + *,
+section.resume > * + *,
+section.intro > * + * {
+  margin-bottom: var(--spacing);
 }

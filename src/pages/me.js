@@ -3,11 +3,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const MePage = () => {
-
   return (
     <Layout>
       <SEO title="Me" />
-      <section className="intro">
+      <section className="resume">
         <h1>About Me</h1>
         <p>
           {" "}
