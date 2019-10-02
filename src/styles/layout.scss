@@ -27,7 +27,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -65,7 +65,7 @@ nav {
 
 .portfolio {
   padding: 1rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto 2rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -123,14 +123,12 @@ nav {
 }
 
 .post {
-  max-width: 1180px;
-  margin: 0 auto;
   padding: 1rem;
 }
 
 .footer-content,
 .homepage-intro {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 1rem;
 }
