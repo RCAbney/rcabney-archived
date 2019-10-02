@@ -9,7 +9,6 @@ const MePage = () => {
       <section className="resume">
         <h1>About Me</h1>
         <p>
-          {" "}
           Confident, versatile detail-oriented front-end developer skilled in
           researching and developing new production workflows. Previously a key
           figure in transitioning a billion-dollar publisher from Flash
@@ -17,32 +16,42 @@ const MePage = () => {
           project management, information design, and military service.
         </p>
         <h2>Technical Skills</h2>
-        <h3>Languages</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SASS</li>
-          <li>JavaScript (ES6)</li>
-        </ul>
+        <div className="skills">
+          <div className="skillset">
+            <h3>Languages</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>JavaScript (ES6)</li>
+            </ul>
+          </div>
+          <div className="skillset">
+            <h3>Frameworks &amp; Libraries</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Foundation</li>
+              <li>React</li>
+              <li>Gatsby</li>
+            </ul>
+          </div>
+          <div className="skillset">
+            <h3>CMS</h3>
+            <ul>
+              <li>WordPress</li>
+              <li>Sitecore</li>
+              <li>Kentico</li>
+            </ul>
+          </div>
+          <div className="skillset">
+            <h3>Tools</h3>
+            <ul>
+              <li>Adobe CC</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
 
-        <h3>Frameworks &amp; Libraries</h3>
-        <ul>
-          <li>Bootstrap</li>
-          <li>Foundation</li>
-          <li>React</li>
-          <li>Gatsby</li>
-        </ul>
-        <h3>CMS</h3>
-        <ul>
-          <li>WordPress</li>
-          <li>Sitecore</li>
-          <li>Kentico</li>
-        </ul>
-        <h3>Tools</h3>
-        <ul>
-          <li>Adobe CC</li>
-          <li>Git</li>
-        </ul>
         <h2>Experience</h2>
         <h3>Ascension St. Vincent — Analyst - Technology (Contingent)</h3>
         <p>Jun 2016 - present</p>

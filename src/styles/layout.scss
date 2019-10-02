@@ -175,3 +175,19 @@ section.resume > * + *,
 section.intro > * + * {
   margin-bottom: var(--spacing);
 }
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skillset {
+  flex-basis: 50%;
+}
+
+@media (max-width: 400px) {
+  .skills {
+    display: block;
+  }
+}
